@@ -1,3 +1,16 @@
+# My Portfolio Site
+
+
+
+
+
+
+
+# Frameworks
+Followed Anton Putra
+https://www.youtube.com/watch?v=K5DTIf-jWhk
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
