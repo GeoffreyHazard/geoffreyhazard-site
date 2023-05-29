@@ -1,3 +1,5 @@
 // App.test.js
 
-// No tests present in this file
+test('placeholder test', () => {
+  // Placeholder test, no actual assertions
+});
