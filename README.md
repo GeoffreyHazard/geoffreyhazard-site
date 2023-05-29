@@ -1,7 +1,11 @@
 # My Portfolio Site
 
 
+## updating the site
 
+`git add .`
+`git commit -m 'commit message'`
+`git push origin main`
 
 
 
