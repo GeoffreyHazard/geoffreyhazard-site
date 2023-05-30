@@ -7,6 +7,12 @@
   pointer-events: none;
 }
 
+.header {
+  text-decoration: none;
+  color: black;
+  /* Add any other desired styles */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -57,3 +63,4 @@
   object-fit: cover;
   object-position: center;
 }
+

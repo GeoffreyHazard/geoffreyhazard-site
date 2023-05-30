@@ -7,6 +7,8 @@
 `git commit -m 'commit message'`
 `git push origin main`
 
+`npm run deploy` To publish to Github Pages
+
 
 
 
