@@ -22,6 +22,30 @@ code {
     monospace;
 }
 
+/* Remove outline for all text elements */
+a,
+button,
+input,
+textarea,
+select,
+label,
+[contenteditable="true"] {
+  outline: none;
+}
+
+/* Additional styles to indicate focus on keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+label:focus,
+[contenteditable="true"]:focus {
+  outline: none;
+  border: 2px solid #007bff; /* Blue border on focus */
+  box-shadow: 0 0 2px 2px #007bff; /* Blue box shadow on focus */
+}
+
 .App {
   text-align: center;
 }
