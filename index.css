@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "BerlinType-Regular"; /* Name of the font family */
-  src: url("fonts/BerlinType-Regular.woff2") format("woff2"),
-    url("fonts/BerlinType-Regular.woff") format("woff"),
-    url("fonts/BerlinType-Regular.otf") format("otf"),
-    url("fonts/BerlinType-Regular.ttf") format("ttf");
+  font-family: "Cynthia-Basic"; /* Name of the font family */
+  src: url("fonts/Cynthia-Basic.woff2") format("woff2"),
+    url("fonts/Cynthia-Basic.woff") format("woff"),
+    url("fonts/Cynthia-Basic.otf") format("otf"),
+    url("fonts/Cynthia-Basic.ttf") format("ttf");
 }
 
 * {
-  font-family: "BerlinType-Regular", -apple-system, BlinkMacSystemFont,
+  font-family: "Cynthia-Basic", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -20,30 +20,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-/* Remove outline for all text elements */
-a,
-button,
-input,
-textarea,
-select,
-label,
-[contenteditable="true"] {
-  outline: none;
-}
-
-/* Additional styles to indicate focus on keyboard navigation */
-a:focus,
-button:focus,
-input:focus,
-textarea:focus,
-select:focus,
-label:focus,
-[contenteditable="true"]:focus {
-  outline: none;
-  border: 2px solid #007bff; /* Blue border on focus */
-  box-shadow: 0 0 2px 2px #007bff; /* Blue box shadow on focus */
 }
 
 .App {
