@@ -11,6 +11,11 @@
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -87,3 +92,18 @@ code {
   object-fit: cover;
   object-position: center;
 }
+
+/* Make the webpage responsive */
+@media only screen and (max-width: 600px) {
+    /* Add responsive styles here for screens smaller than 600px */
+    h2 {
+      font-size: 18px; /* Decrease the font size for h2 */
+      padding-bottom: 10px; /* Add some padding to the bottom of h2 */
+    }
+  
+    p {
+      font-size: 14px; /* Decrease the font size for p */
+      padding: 0; /* Remove any padding from p */
+    }
+  }
+  
