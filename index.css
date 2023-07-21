@@ -106,4 +106,52 @@ code {
       padding: 0; /* Remove any padding from p */
     }
   }
+
+
+/* image-grid-subpage objects*/
+/* Add margin on the left and right sides of the page */
+body {
+  margin: 0 20px;
+}
+
+/* Rest of the CSS remains the same */
+.image-grid-subpage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-object {
+  flex: 0 0 calc(50% - 10px);
+  margin-bottom: 20px;
+  position: relative; /* Add relative positioning to create a stacking context for absolute positioning */
+  overflow: hidden; /* Hide overflowing title when not visible */
+}
+
+.image-object img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s; /* Smooth transition for the darkened overlay */
+}
+
+.image-object:hover img {
+  filter: brightness(70%); /* Apply a darkened overlay when hovering over the image */
+}
+
+.image-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+.image-object:hover .image-title {
+  opacity: 1; /* Show the image title when hovering over the image-object */
+}
+
+
   
