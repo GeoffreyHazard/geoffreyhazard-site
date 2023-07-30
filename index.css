@@ -116,13 +116,21 @@ body {
 
 /* Rest of the CSS remains the same */
 .image-grid-subpage {
+  /*max-height: 300px;*/
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
+}
+
+@media only screen and (max-width: 600px) {
+  .image-grid-subpage {
+    flex-wrap: wrap;
+  }
+}
+
 .image-object {
-  flex: 0 0 calc(50% - 10px);
+  flex: 0 0 .1;
   margin-bottom: 20px;
   position: relative; /* Add relative positioning to create a stacking context for absolute positioning */
   overflow: hidden; /* Hide overflowing title when not visible */
