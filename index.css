@@ -16,6 +16,10 @@ h1 {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none; /* Remove underline from the header link */
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -108,6 +112,45 @@ code {
   }
 
 
+
+  .banner {
+    padding: 25px; /* Add any necessary padding for the banner */
+  }
+  
+  .header {
+    background-color: white;
+    padding: 10px; /* Add any necessary padding for the banner */
+    text-decoration: none; /* Remove underline from the header link */
+    color: black; /* Add your desired color for the header text */
+  }
+  
+  /* Make the header fixed at the top */
+  .header {
+    position: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Set a high z-index to ensure it appears above other elements */
+  }
+  
+  /* Optional: Add some styling to the header when it's fixed */
+  /* For example, you can add a background color and adjust padding */
+  .header.fixed {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 0;
+    color: red; /* Add your desired color for the header text */
+
+
+  }
+
+
+
+
+
+
+
+
 /* image-grid-subpage objects*/
 /* Add margin on the left and right sides of the page */
 body {
@@ -132,6 +175,7 @@ body {
 .image-object {
   flex: 0 0 .1;
   margin-bottom: 20px;
+  margin-top: 20px;
   position: relative; /* Add relative positioning to create a stacking context for absolute positioning */
   overflow: hidden; /* Hide overflowing title when not visible */
 }
