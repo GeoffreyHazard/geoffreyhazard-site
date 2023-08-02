@@ -1,3 +1,5 @@
+/* TEXT */
+
 @font-face {
   font-family: "Cynthia-Basic"; /* Name of the font family */
   src: url("fonts/Cynthia-Basic.woff2") format("woff2"),
@@ -7,8 +9,8 @@
 }
 
 * {
-  font-family: "Cynthia-Basic", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Cynthia-Basic", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 h1 {
@@ -20,61 +22,35 @@ a {
   text-decoration: none; /* Remove underline from the header link */
 }
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.App {
-  text-align: center;
-}
+/* PAGE BODY */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.header {
-  text-decoration: none;
-  color: black;
-  /* Add any other desired styles */
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  margin: 0;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-link {
-  color: #61dafb;
+.homepage-content {
+  padding-top: 59px;
+  max-width: 1100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subpage-content {
+  padding-top: 59px;
+  max-width: 1000px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
+
+/* HOMEPAGE IMAGE GRID */
 
 #image-grid {
   display: grid;
@@ -99,71 +75,42 @@ code {
 
 /* Make the webpage responsive */
 @media only screen and (max-width: 600px) {
-    /* Add responsive styles here for screens smaller than 600px */
-    h2 {
-      font-size: 18px; /* Decrease the font size for h2 */
-      padding-bottom: 10px; /* Add some padding to the bottom of h2 */
-    }
-  
-    p {
-      font-size: 14px; /* Decrease the font size for p */
-      padding: 0; /* Remove any padding from p */
-    }
+  /* Add responsive styles here for screens smaller than 600px */
+  h2 {
+    font-size: 18px; /* Decrease the font size for h2 */
+    padding-bottom: 10px; /* Add some padding to the bottom of h2 */
   }
 
-
-
-  .banner {
-    padding: 25px; /* Add any necessary padding for the banner */
+  p {
+    font-size: 14px; /* Decrease the font size for p */
+    padding: 0; /* Remove any padding from p */
   }
-  
-  .header {
-    background-color: white;
-    padding: 10px; /* Add any necessary padding for the banner */
-    text-decoration: none; /* Remove underline from the header link */
-    color: black; /* Add your desired color for the header text */
-  }
-  
-  /* Make the header fixed at the top */
-  .header {
-    position: fixed;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999; /* Set a high z-index to ensure it appears above other elements */
-  }
-  
-  /* Optional: Add some styling to the header when it's fixed */
-  /* For example, you can add a background color and adjust padding */
-  .header.fixed {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 10px 0;
-    color: red; /* Add your desired color for the header text */
-
-
-  }
-
-
-
-
-
-
-
-
-/* image-grid-subpage objects*/
-/* Add margin on the left and right sides of the page */
-body {
-  margin: 0 20px;
 }
+
+
+/* MENU BAR */
+
+/* Make the header fixed at the top */
+.header {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px; /* Add any necessary padding for the banner */
+  position: fixed;
+  border-bottom: 1px solid #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Set a high z-index to ensure it appears above other elements */
+}
+
+/* IMAGES */
 
 /* Rest of the CSS remains the same */
 .image-grid-subpage {
   /*max-height: 300px;*/
   display: flex;
   justify-content: space-between;
-}
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -173,7 +120,7 @@ body {
 }
 
 .image-object {
-  flex: 0 0 .1;
+  flex: 0 0 0.1;
   margin-bottom: 20px;
   margin-top: 20px;
   position: relative; /* Add relative positioning to create a stacking context for absolute positioning */
@@ -187,7 +134,9 @@ body {
 }
 
 .image-object:hover img {
-  filter: brightness(70%); /* Apply a darkened overlay when hovering over the image */
+  filter: brightness(
+    70%
+  ); /* Apply a darkened overlay when hovering over the image */
 }
 
 .image-title {
@@ -204,6 +153,3 @@ body {
 .image-object:hover .image-title {
   opacity: 1; /* Show the image title when hovering over the image-object */
 }
-
-
-  
