@@ -28,6 +28,42 @@ code {
     monospace;
 }
 
+
+
+/* MENU BAR */
+
+.navMenu {
+  background-color: white;
+  padding: 10px; /* Add any necessary padding for the banner */
+  position: fixed;
+  border-bottom: 1px solid #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Set a high z-index to ensure it appears above other elements */
+
+  display: flex;
+  justify-content: space-between; /* Items are placed at the start and end of the container */
+  align-items: center; /* Center items vertically within the container */
+  padding: 10px 20px; /* Add padding for spacing */
+}
+
+.mainLogo {
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+}
+
+.navItem {
+  margin-left: 20px; /* Add spacing between items */
+  margin-right: 40px; /* Add spacing between items */
+  text-align: right;
+  text-decoration: none;
+  color:  #0645AD;
+}
+
+
+
 /* PAGE BODY */
 
 body {
@@ -57,6 +93,8 @@ body {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+
 
 /* HOMEPAGE IMAGE GRID */
 
@@ -94,21 +132,6 @@ body {
 }
 
 
-/* MENU BAR */
-
-/* Make the header fixed at the top */
-.header {
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  padding: 10px; /* Add any necessary padding for the banner */
-  position: fixed;
-  border-bottom: 1px solid #000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999; /* Set a high z-index to ensure it appears above other elements */
-}
 
 /* IMAGES */
 
