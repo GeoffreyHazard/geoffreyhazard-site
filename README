@@ -2,6 +2,4 @@ git add -A
 git commit -m "message"
 git push
 
-
-Height of images should be 1625px.
-See scale_images.sh
+See scale_images.sh for scaling images.
