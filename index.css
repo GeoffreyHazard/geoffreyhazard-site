@@ -63,8 +63,6 @@ body {
 #image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 300px; /* Set the fixed height for the image tiles */
-  gap: px; /* Set the gap between the image tiles */
 }
 
 #image-grid .image-tile {
@@ -116,7 +114,6 @@ body {
 
 /* Rest of the CSS remains the same */
 .image-grid-subpage {
-  /*max-height: 300px;*/
   display: flex;
   justify-content: space-between;
 }
