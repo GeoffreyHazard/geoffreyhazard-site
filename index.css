@@ -20,7 +20,7 @@ h1 {
 
 a {
   text-decoration: none; /* Remove underline from the header link */
-  color: #0645AD;
+  color: #c23005;
 }
 
 code {
@@ -59,7 +59,7 @@ code {
   margin-right: 40px; /* Add spacing between items */
   text-align: right;
   text-decoration: none;
-  color:  #0645AD;
+  color:  #c23005;
 }
 
 
