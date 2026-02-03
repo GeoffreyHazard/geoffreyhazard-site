@@ -1,5 +1,6 @@
 # My Portfolio Site
 
+Navigate to the GH-Pages branch. It is the most updated version of the site
 
 ## updating the site
 
